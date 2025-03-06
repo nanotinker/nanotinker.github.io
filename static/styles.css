@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #add8e6, #00008b);
+    margin: 0;
+    overflow-y: auto;
+    min-height: 100vh;
+    padding: 8px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 32px; /* Větší text pro hlavičku */
+    font-weight: bold;
+    z-index: 10;
+}
+
+.editors-container {
+    display: flex;
+    flex-direction: column; /* Všechny editory budou pod sebou */
+    align-items: center; /* Zarovná editory na střed */
+    gap: 50px; /* Větší mezera mezi řadami */
+    width: 100%;
+    max-width: 1300px; /* Větší maximální šířka pro editory */
+    padding: 8px;
+}
+
+.row {
+    display: flex; /* Editory v řadě vedle sebe */
+    gap: 30px; /* Mezery mezi editory */
+    justify-content: center; /* Zarovná editory na střed v rámci řady */
+}
+
+.editor {
+    background: white;
+    padding: 20px;  /* Zvýšený padding pro více prostoru kolem editoru */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;  /* Větší šířka editoru */
+    height: 650px; /* Větší výška editoru */
+}
+
+.editor h2 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Větší písmo pro název editoru */
+    color: #333;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
